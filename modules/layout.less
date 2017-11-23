@@ -1,0 +1,161 @@
+@import "grid-helpers.less";
+@import "grid-flex.less";
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    background-color: #efefef;
+}
+
+html.vgrid & {
+    .showGrid();
+}
+
+html.hgrid & {
+    .showGridh();
+}
+
+.rm-default li a {
+    color: #fff;
+}
+
+.site-header {
+    .column(12);
+    background-color: #323156;
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+.site-logo-text {
+    .column(2);
+    padding-top: 13px;
+}
+.site-logo-text a {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.breadcrumb-wrap {
+    .column(12);
+}
+
+.footer {
+    .column(12);
+    background-color: #222;
+
+    .footer-column {
+        .column(4);
+        color: #ccc;
+    }
+
+    a {
+        color: #07beb8;
+    }
+
+    & .site-footer p {
+        color: #ccc;
+    }
+
+    & .site-footer ul {
+        text-align: center;
+        & li {
+            display: inline;
+        }
+    }
+}
+
+.footer-column-wrapper {
+    background-color: #323156;
+}
+
+.route-grid {
+    .showGrid();
+}
+
+.route-typography {
+    .showGridh();
+}
+
+.route- .article {
+    .column(8);
+    .push(2);
+}
+
+.route-grid .article {
+    .column(9);
+}
+
+.route-typography .article {
+    .column(8);
+    .push(2);
+}
+
+.route-about .article {
+    .column(8);
+    .push(2);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar2 {
+        display: none;
+    }
+}
+.flash-wrap {
+    .column(10);
+    .push(1);
+}
+
+.sidebar {
+    .column(2);
+    background-color: #fff;
+    border: 1px solid #444;
+    padding: 4px;
+}
+
+.main.has-sidebar-left {
+    .column(9);
+}
+
+.next-previous {
+    .column(12);
+}
+
+.previous {
+    .column(6);
+}
+
+.next {
+    .column(6);
+    a {
+        float: right;
+    }
+    span {
+        float: right;
+    }
+}
+
+.wrap {
+    .container();
+    max-width: 1300px;
+}
+
+.row {
+    .row();
+}
+
+.column,
+.column-a,
+.column-b {
+    .column(6);
+}
+
+// Make it responsive using media queries
+@media (max-width: 1200px) {
+    .wrap {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
