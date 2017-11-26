@@ -1,0 +1,90 @@
+/**
+ * Base theme including all modules needed.
+ *
+ * Each module is within its own
+ * modules/some-module.less file and is imported by this file.
+ * Each module.less can be copied to ./some-module.less and will then
+ * be override modules/some-module.less. This is useful when several themes
+ * the same modules.
+ */
+//@import url(some-module.less);
+
+@import url(normalize.less);
+
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Navbar
+@import url(navbar.less);
+
+// Footer
+@import url(footer.less);
+
+// Grid Flex
+// @import url(grid-flex.less);
+
+// Grid Float
+@import url(grid-float.less);
+
+// Layout
+@import url(layout.less);
+
+// typography
+@import url(typography.less);
+
+@body-background_color: #333;
+@body-background_color_text: #fff;
+
+@navbar_color: #000;
+@navbar-logo-color_text: #fff;
+@navbar-navbar-color_text: #fff;
+
+@footer_color: #555;
+@footer-column-wrapper-color: #999;
+@footer-column_color_text: #fff;
+@footer-column_color_links: #070eb8;
+@footer-column-site_color_text: #fff;
+
+body {
+    background-color: @body-background_color;
+    color: @body-background_color_text;
+}
+
+.logo-1 {
+    display: none;
+}
+
+.site-header {
+    background-color: @navbar_color;
+}
+
+.site-logo-text a {
+    color: @navbar-logo-color_text;
+}
+
+.rm-default li a {
+    color: @navbar-navbar-color_text;
+}
+
+.footer-column-wrapper {
+    background-color: @footer-column-wrapper-color;
+}
+
+.footer {
+    background-color: @footer_color;
+
+    .footer-column {
+        color: @footer-column_color_text;
+    }
+
+    a {
+        color: @footer-column_color_links;
+    }
+
+    & .site-footer p {
+        color: @footer-column-site_color_text;
+    }
+
+}
