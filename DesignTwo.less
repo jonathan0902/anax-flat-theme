@@ -1,0 +1,78 @@
+/**
+ * Base theme including all modules needed.
+ *
+ * Each module is within its own
+ * modules/some-module.less file and is imported by this file.
+ * Each module.less can be copied to ./some-module.less and will then
+ * be override modules/some-module.less. This is useful when several themes
+ * the same modules.
+ */
+//@import url(some-module.less);
+
+@import url(normalize.less);
+
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Navbar
+@import url(navbar.less);
+
+// Footer
+@import url(footer.less);
+
+// Grid Flex
+// @import url(grid-flex.less);
+
+// Grid Float
+@import url(grid-float.less);
+
+// Layout
+@import url(layout.less);
+
+// typography
+@import url(typography.less);
+
+@import url(figure.less);
+
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main {
+    background-image: url("../img/content.png");
+    background-size: 100%;
+}
+
+.article {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.blog-list {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.blog {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.blog-post {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.flash-wrap {
+    .column(8);
+    .push(2);
+}
+
+.route-theme article {
+    .column(8);
+    .push(2);
+}

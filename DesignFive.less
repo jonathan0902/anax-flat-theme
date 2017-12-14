@@ -1,0 +1,133 @@
+/**
+ * Base theme including all modules needed.
+ *
+ * Each module is within its own
+ * modules/some-module.less file and is imported by this file.
+ * Each module.less can be copied to ./some-module.less and will then
+ * be override modules/some-module.less. This is useful when several themes
+ * the same modules.
+ */
+//@import url(some-module.less);
+
+@import url(normalize.less);
+
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Navbar
+@import url(navbar.less);
+
+// Footer
+@import url(footer.less);
+
+// Grid Flex
+// @import url(grid-flex.less);
+
+// Grid Float
+@import url(grid-float.less);
+
+// Layout
+@import url(layout.less);
+
+// typography
+@import url(typography.less);
+
+@import url(figure.less);
+
+@navbar_color: #A33643;
+@navbar-logo-color_text: #fff;
+@navbar-navbar-color_text: #fff;
+
+@footer_color: #220439;
+@footer-column-wrapper-color: #391356;
+@footer-column_color_text: #fff;
+@footer-column_color_links: #ABAE3A;
+@footer-column-site_color_text: #fff;
+
+.logo-1 {
+    display: none;
+}
+
+.site-header {
+    background-color: @navbar_color;
+}
+
+.site-logo-text a {
+    color: @navbar-logo-color_text;
+}
+
+.rm-default li a {
+    color: @navbar-navbar-color_text;
+}
+
+.footer-column-wrapper {
+    background-color: @footer-column-wrapper-color;
+}
+
+.footer {
+    background-color: @footer_color;
+
+    .footer-column {
+        color: @footer-column_color_text;
+    }
+
+    a {
+        color: @footer-column_color_links;
+    }
+
+    & .site-footer p {
+        color: @footer-column-site_color_text;
+    }
+
+}
+
+.route-grid {
+    background-color: #822B66;
+}
+
+.route-typography {
+    background-color: #611047;
+}
+
+.route- {
+    background-color: #41002C;
+}
+
+.route-grid {
+    background-color: #A25188;
+}
+
+.route-about- {
+    background-color: #C382AE;
+}
+
+.route-typography {
+    background-color: #611047;
+}
+
+.route-about {
+    background-color: #41002C;
+}
+
+.route-analysis {
+    background-color: #A25188;
+}
+
+.route-report {
+    background-color: #C382AE;
+}
+
+.route-theme {
+    background-color: #822B66;
+}
+
+.route-theme article {
+    .column(8);
+    .push(2);
+}
+
+.logo-1 {
+    display: none;
+}

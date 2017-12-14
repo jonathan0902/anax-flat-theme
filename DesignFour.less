@@ -1,0 +1,74 @@
+/**
+ * Base theme including all modules needed.
+ *
+ * Each module is within its own
+ * modules/some-module.less file and is imported by this file.
+ * Each module.less can be copied to ./some-module.less and will then
+ * be override modules/some-module.less. This is useful when several themes
+ * the same modules.
+ */
+//@import url(some-module.less);
+
+@import url(normalize.less);
+
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Navbar
+@import url(navbar.less);
+
+// Footer
+@import url(footer.less);
+
+// Grid Flex
+// @import url(grid-flex.less);
+
+// Grid Float
+@import url(grid-float.less);
+
+// Layout
+@import url(layout.less);
+
+// typography
+@import url(typography.less);
+
+@import url(figure.less);
+
+@keyframes backgroundColor {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+html {
+    animation-name: backgroundColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-color: #eeeeee;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.logo-1 {
+    display: none;
+}
+
+.flash-wrap {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.article {
+    background-color: #eeeeee;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

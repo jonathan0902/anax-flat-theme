@@ -1,0 +1,91 @@
+/**
+ * Base theme including all modules needed.
+ *
+ * Each module is within its own
+ * modules/some-module.less file and is imported by this file.
+ * Each module.less can be copied to ./some-module.less and will then
+ * be override modules/some-module.less. This is useful when several themes
+ * the same modules.
+ */
+//@import url(some-module.less);
+
+@import url(normalize.less);
+
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Navbar
+@import url(navbar.less);
+
+// Footer
+@import url(footer.less);
+
+// Grid Flex
+// @import url(grid-flex.less);
+
+// Grid Float
+@import url(grid-float.less);
+
+// Layout
+@import url(layout.less);
+
+// typography
+@import url(typography.less);
+
+@import url(figure.less);
+
+html {
+    background-image: url("../img/bakgrund.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: #eeeeee;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+.main {
+    .column(12);
+    background: linear-gradient(to right, red , yellow);
+    opacity: 0.7;
+}
+
+.blog-list {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.blog {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.blog-post {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.route-theme article {
+    .column(8);
+    .push(2);
+}
+
+.after-main {
+    background-image: url("../img/footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .column(12);
+}
+
+.inner-wrap-flash {
+    background-image: url("../img/footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .column(12);
+}
